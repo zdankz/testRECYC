@@ -32,6 +32,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initData() {
-
+        // Generate sample data
+        val names = arrayListOf("Nguyễn Văn Y", "NGuyễn Văn A", "Nguyễn Văn B")
+        for (i in 1..100) {
+            // Add data to repository collection
+            users.add(User(i, "", names.random()))
+        }
+        // Notify to adapter that data was updated
+        adapter.notifyDataSetChanged()
     }
 }
