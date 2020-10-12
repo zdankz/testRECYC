@@ -1,5 +1,4 @@
-package com.example.testryc.model
-
+package com.example.testryc.models.data
 
 import com.google.gson.annotations.SerializedName
 
@@ -11,5 +10,5 @@ data class RequesUserItem(
     @SerializedName("ParentName")
     val parentName: String,
     @SerializedName("SDT")
-    val sDT: String
+    val sdt: String
 )
